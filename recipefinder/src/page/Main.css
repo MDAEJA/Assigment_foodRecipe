@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-div {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #fc8019;
+  color: white;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 300px;
+  border: 1px solid #ddd;
+}
+
+.search-button {
+  padding: 5px 15px;
+  background-color: #fc8019;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-style: italic;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #ff5722;
+}
+
+.food-div {
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.recipe-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.recipe-div {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.recipe-details-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make sure it takes the full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.recipe-div {
+    position: fixed; /* Fix the position to make it easier to center */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content */
+    background-color: rgba(0, 0, 0, 0.8); /* Add a semi-transparent background to highlight the details */
+    z-index: 10; /* Ensure it is above other elements */
+}
+
+.recipe-div img {
+    max-width: 100%; /* Make sure the image doesn't overflow */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Background overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* Ensure it appears on top of other elements */
+}
+
+/* Popup/modal container */
+.recipe-details-container {
+  background-color: #fff; /* White background for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  max-width: 500px; /* Limit width */
+  width: 90%; /* Ensure responsiveness */
+  position: relative; /* For the close button */
+  z-index: 101;
+  text-align: center;
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: coral;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .recipe-div {
+        padding: 20px;
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+  .recipe-div {
+      top: 5%;
+      left: 10%;
+      max-width: 90%;
+      padding: 15px;
+  }
+
+  input {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .recipe-div {
+      top: 2%;
+      left: 5%;
+      max-width: 95%;
+      padding: 10px;
+  }
+
+  input {
+      width: 100%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 426px) {
+  .header-div {
+      flex-direction: column;
+      gap: 5px;
+  }
+}

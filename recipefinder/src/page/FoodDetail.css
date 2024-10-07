@@ -1,0 +1,78 @@
+.food-detail-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .food-detail-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .food-detail-content {
+    margin-left: 20px;
+    padding: 10px;
+  }
+  
+  .food-detail-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .food-detail-calories {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .food-detail-ingredients, .food-detail-instructions {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .food-detail-ingredients li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #555;
+  }
+  .close-buttn{
+    padding: 5px 10px;
+    background-color: coral;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+  @media (max-width: 768px) {
+    .food-detail-container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .food-detail-content {
+      margin-left: 0;
+      padding: 0;
+    }
+  
+    .food-detail-title {
+      text-align: center;
+    }
+  
+    .food-detail-image img {
+      max-width: 100%;
+    }
+  }
+  
