@@ -27,7 +27,7 @@ A **Recipe Finder** application built with **React** that fetches recipes from t
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/recipe-finder-app.git
+   git clone https://github.com/MDAEJA/Assigment_foodRecipe.git
 Navigate to the project directory:
 
 bash
